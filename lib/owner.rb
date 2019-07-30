@@ -50,7 +50,9 @@ class Owner
   end
 
   def sell_pets
-    Dog.all.clear
-    Dog.all. collect {|dog| dog.owner = "", dog.mood = "nervous"}
+
+    Dog.all.each {|dog| dog.owner = "", dog.mood = "nervous"}
+    Cat.all.each {|cat| cat.owner = "", cat.mood = "nervous"}
+  end 
 
 end
