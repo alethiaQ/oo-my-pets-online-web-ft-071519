@@ -1,6 +1,7 @@
 class Owner
 
   attr_reader :name, :species
+  attr_accessor 
   @@all = []
   def name(owner_name)
     @name = owner_name
@@ -26,6 +27,7 @@ class Owner
 
   def buy_cat(name)
     cat = Cat.new(name, self.name)
+    cat.owner = self
   end
   def buy_dog(name)
     dog = Dog.new(name, self.name)
