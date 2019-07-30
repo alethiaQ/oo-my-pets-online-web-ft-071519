@@ -14,6 +14,6 @@ attr_accessor :owner, :mood
   end
 
   def self.all
-    @@all_cats
+    @@all
   end
 end
