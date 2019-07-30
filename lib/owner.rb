@@ -1,7 +1,7 @@
 class Owner
 
   attr_reader :name, :species
-  attr_accessor 
+  attr_accessor
   @@all = []
   def name(owner_name)
     @name = owner_name
