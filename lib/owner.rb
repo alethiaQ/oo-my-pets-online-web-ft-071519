@@ -53,6 +53,8 @@ class Owner
 
     Dog.all.each {|dog|  dog.mood = "nervous"}
     Cat.all.each {|cat|  cat.mood = "nervous"}
+    Dog.all.each {|dog| dog.owner = nil}
+    Cat.all.each {|cat| cat.owner = nil}
   end
 
 end
