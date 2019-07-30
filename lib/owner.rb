@@ -57,7 +57,7 @@ class Owner
     Cat.all.each {|cat| cat.owner = nil}
   end
 
-  def list_pets 
+  def list_pets
     puts "I have #{self.dogs.count} dog(s), and #{self.cats.count} cat(s)."
   end
 
